@@ -1,0 +1,29 @@
+.sidebar {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+.sidebar a {
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+}
+
+.sidebar a.active {
+  background-color: #9412a5;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .sidebar {
+      display: flex;
+      width: 100%;
+      height: initial;
+  }
+}
